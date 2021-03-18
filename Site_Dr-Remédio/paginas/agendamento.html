@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/agendamento.css" type="text/css">
+    <link rel="shortcut icon" href="../img/icon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!-- JavaScript -->
+    <script  src="../jquery/jquery.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="../javascript/others.js"></script>
+    <title>Agendamento</title>
+</head>
+<body id="content">
+    <header>
+        <h1 id="logo">S<span>M</span>A<span>C</span></h1>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="agendamento.html">Agendamento</a></li>
+            <li><a href="./Cad_Paciente.html">Cadastrar Paciente</a></li>
+            <li><a href="./Cad_Medico.html">Cadastrar Médico</a></li>
+        </ul>
+    </header>
+    <br> 
+    <br> 
+    <main>
+        <img id="banner" src="../img/Ag_banner.png" alt="Doutora" title="Preencha o Formulario">
+        <h1>Agendamento</h1>
+        <form action="" method="post">
+          <h2 class="titulo">Preencha o formúlario</h2> 
+          <h4>**Todos os campos são obrigatórios**</h4>
+                  
+          <label for="paciente" class="titulos">Paciente: </label> <br>
+          <input type="text" placeholder="DIGITE SEU NOME" autofocus required> <br>
+
+          <div class="agendamento">
+            <label class="titulos" for="tipo">Tipo do Agendamento</label> <br>
+            <input type="radio" id="tipo"> <label for="tipo">Consulta</label>
+            <input type="radio" id="tipo"> <label for="tipo">Retorno</label>
+            <input type="radio" id="tipo"> <label for="tipo">Encaixe</label>
+          </div>
+
+          <label class="titulos">Possui Convênio? </label>
+          <div class="convenio">
+            <input type="radio" id="convenio"> <label for="convenio">Sim</label>
+            <input type="radio" id="convenio"> <label for="convenio">Não</label>
+          </div>
+        
+
+          <label for="qual" class="titulos">Caso possua Convênio, Qual?</label> <br>
+          <input list="qual">
+          <datalist id="qual">
+            <option value="aaaaaaaaa"></option>
+            <option value="aaaaaaaaa"></option>
+            <option value="aaaaaaaaa"></option>
+            <option value="aaaaaaaaa"></option>
+            <option value="aaaaaaaaa"></option>
+          </datalist>  <br>
+          <label class="titulos">Especialidade</label>
+          <div class="especialidade">
+            <input type="radio" id="cg"> <label for="cg">Clínico Geral</label>
+            <input type="radio" id="dtl"> <label for="dtl">Dermatologista</label>
+            <input type="radio" id="ortp"> <label for="ortp">Ortopedia</label>
+            <input type="radio" id="gine"> <label for="gine">Ginecologista</label>
+          </div>
+          <label for="medico" class="titulos">Médico: </label> 
+          <input list="doctors">
+          <datalist id="doctors">
+            <option value="Dr. aaaaaa"></option>
+            <option value="Dr. aaaaaa"></option>
+            <option value="Dr. aaaaaa"></option>
+            <option value="Dr. aaaaaa"></option>
+            <option value="Dr. aaaaaa"></option>
+          </datalist> <br>
+
+          <label for="data" class="titulos">Data do Agendamento: </label>
+          <input type="date" id="data"> <br>
+
+          <label for="hora" class="titulos">Hora: </label> 
+          <input list="hora">
+          <datalist id="hora">
+            <option value="12:00"></option>
+            <option value="13:00"></option>
+            <option value="14:20"></option>
+            <option value="23:00"></option>
+            <option value="????"></option>
+          </datalist> <br>
+
+          <label for="obs" class="titulos">Observação: </label> <br>  
+          <textarea name="obs" id="obs" placeholder="Digite um Observação" cols="40" rows="10"></textarea> <br>
+
+          <input type="submit" class="enviar">
+        </form>
+    </main>
+    <footer>
+      <div class="cont-footer">
+        <ul>
+            <h2>Contato</h2>
+            <li>(11) 4002-8922</li>
+            <li>smac.atendimento@gmail.com</li>
+            <li class="card">Fale Conosco</li>
+        </ul>
+        <ul>
+            <h2>Endereço</h2>
+            <li>Rua das Palmeiras, 233</li>
+            <li>Centro</li>
+            <li>Joinville, SC</li>
+        </ul>
+    </div>    
+    <div class="copyright">
+        <h3>Rennan Emanoel Assunção Trindade - Turma 01</h3>
+        <h3>Copyright &copy; - 2021</h3>
+    </div>
+    </footer>
+    <img src="../img/erro.png" alt="Reporta Erro!" id="erro" title="Fale Conosco!">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>

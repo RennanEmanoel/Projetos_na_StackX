@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icon.jpg">
+    <link rel="stylesheet" href="../styles/Cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!-- JavaScript -->
+    <script  src="../jquery/jquery.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="../javascript/others.js"></script>
+
+    <title>Cadastro de Paciente</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo">S<span>M</span>A<span>C</span></h1>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./agendamento.html">Agendamento</a></li>
+            <li><a href="./Cad_Paciente.html">Cadastrar Paciente</a></li>
+            <li><a href="./Cad_Medico.html">Cadastrar Médico</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Cadastro Médico</h1>
+        <form action="" method="post">
+            <h2 class="titulo">Preencha o formúlario</h2> 
+            <h4>**Todos os campos são obrigatórios**</h4>
+                    
+            <label for="paciente" class="titulos">Nome Completo: </label> <br>
+            <input type="text" placeholder="DIGITE SEU NOME" autofocus required> <br>
+            
+            <label for="paciente" class="titulos">Email: </label> <br>
+            <input type="text" placeholder="seuemail@gmail.com" required> <br>
+
+            <label for="paciente" class="titulos">CPF: </label> <br>
+            <input type="text" placeholder="000.000.000-00" required> <br>
+
+  
+            <label class="titulos">Sexo </label>
+            <div class="convenio">
+              <input type="radio" id="sexos"> <label for="sexos">Masculino</label>
+              <input type="radio" id="sexon"> <label for="sexon">Feminino</label>
+            </div>
+
+            <label for="data" class="titulos">Data de Nascimento: &nbsp;</label> <br>
+            <input type="date" id="crm" required> <br>
+            
+            <label class="titulos">Telefone</label> <br>
+            <label for="fixo">Fixo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type="tel" id="fixo" required>
+            <label for="celular">Celular: </label> <input type="tel" id="celular" required> <br>
+
+            <label for="paciente" class="titulos">Login: </label> <br>
+            <input type="text" required> <br>
+
+            <label for="senha" class="titulos">Senha: </label> <br>
+            <input type="password" required> <br>
+
+            <label for="confirmar-s" class="titulos">Confirmar senha: </label> <br>
+            <input type="password"  required> <br>
+
+            <label for="obs" class="titulos">Observação: </label> <br>  
+            <textarea name="obs" id="obs" placeholder="Digite um Observação" cols="50" rows="10"></textarea> <br>
+  
+            <input type="submit" class="enviar">
+          </form>
+    </main>
+    <footer>
+        <div class="cont-footer">
+            <ul>
+                <h2>Contato</h2>
+                <li>(11) 4002-8922</li>
+                <li>smac.atendimento@gmail.com</li>
+                <li class="card">Fale Conosco</li>
+            </ul>
+            <ul>
+                <h2>Endereço</h2>
+                <li>Rua das Palmeiras, 233</li>
+                <li>Centro</li>
+                <li>Joinville, SC</li>
+            </ul>
+        </div>    
+        <div class="copyright">
+            <h3>Rennan Emanoel Assunção Trindade - Turma 01</h3>
+            <h3>Copyright &copy; - 2021</h3>
+        </div>
+    </footer>
+   <img src="../img/erro.png" alt="Reporta Erro!" id="erro" title="Fale Conosco!">
+   
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Bree serif;
+}
+header {
+    background-color: rgb(39, 235, 160);
+    box-shadow: 0px 3px 6px rgb(105, 105, 105);
+    margin-bottom: 1em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+header span {
+    color: rgb(4, 42, 255);
+}
+header h1 {
+    position: absolute;
+    font-size: 4em;
+    margin: 0em 1em;
+}
+/* header {
+    display: flex;
+    justify-content: space-around;
+} */
+header .menu {
+    z-index: 4;
+}
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: right;
+    list-style: none;
+    padding: 2em;
+    margin: 1px 0em 0px 20em;
+}
+.menu  {
+    cursor: pointer;
+}
+.menu li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: rgb(2, 26, 243);
+    padding: 0px 9px;
+}
+.menu a:hover {
+    background-color: rgb(219, 153, 11);
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#banner {
+    position: fixed;
+    margin-left: 38em;
+    z-index: -5;
+    margin-top: 2em;
+}
+main {
+    margin-top: 4em;
+    height: 500px;
+}
+main h1 {
+    font-size: 3.5em;
+    color: rgb(243, 149, 41);
+    margin-right: 6em;
+    text-align: center; 
+}
+form {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 600px;
+    background: rgba(29, 29, 29, 0.856);
+    backface-visibility: .5;
+    background-size: cover;
+    margin-left: 13em;
+    line-height: 2.7em;
+    color: #fff;
+}
+form h4 {
+    text-align: right;
+    margin-right: .3em;
+    margin-bottom: .5em;
+    color: rgb(250, 25, 25);
+    opacity: .7;
+}
+.titulo {
+    text-align: center;
+    margin: 0px auto;
+    background-color: rgb(243, 149, 41);
+}
+.titulos {
+    font-size: 1.1em;
+    color:  rgb(219, 149, 19);
+}
+form input[type=text] {
+    width: 80%;
+    margin-top: -1em;
+    height: 30px;
+}
+form input[list] {
+    width: 80%;
+}
+form input[type=radio], input[type=text], input[list=qual],  #obs {
+    margin-left: 2em;
+}
+form label {
+    margin-left: 1.5em;
+}
+.convenio label {
+    margin-left: 1em;
+}
+.especialidade label {
+    margin-left: .5em;
+}
+#obs {
+    margin-bottom: 4em;
+}
+.enviar {
+    padding: 4px 18px;
+    color: #ffff;
+    font-size: 1.5em;
+    background-color: rgb(221, 153, 7);
+    border: none;
+    border-radius: 6px;
+    margin-left: 10em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+.enviar:hover {
+    color: black;
+    background-color: #ffff;
+}
+footer {
+    height: 15em; 
+    background-color: rgb(221, 153, 7);
+    position: absolute;
+    bottom: 0;
+    top: 75em;
+    width: 100%;
+    clear: both;
+}
+.cont-footer {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+footer h2 {
+    font-size: 2em;
+}
+footer ul {
+    margin-top: 1.3em;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+footer .copyright {
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+  
+}
+.copyright h3 {
+    color: #ffff;
+    text-decoration: none;
+    margin-bottom: .1em;
+}
+#erro {
+    cursor: pointer;
+    position: fixed;
+    z-index: 7;
+    top: 83%;
+    left: 92%;
+    width: 100px;
+}

@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 13em;
+    width: 100%;
+    font-family: bree serif;
+    text-decoration: none;
+}
+.background {
+    position: fixed;
+    top: -0em;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    /* margin-top: -13em; */
+}
+/* HEader menu da página */
+header .menu {
+    z-index: 4;
+}
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: right;
+    list-style: none;
+    padding: 2em;
+    margin: 1px 0em 0px 20em;
+
+}
+#logo {
+    color: blue;
+}
+.menu  {
+    cursor: pointer;
+}
+.menu li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: rgb(41, 226, 112);
+    padding: 0px 9px;
+}
+.menu a:hover {
+    background-color: rgb(219, 153, 11);
+    color: #ffffff;
+    border-radius: 13px;
+}
+
+
+/* Titulo principal */
+main{
+    text-align: right;
+    margin-right: 5em;
+    margin-top: 5em;
+    
+}
+main h1, h2, h3 {
+    cursor: pointer;
+}
+main h1 {
+    font-size: 6em;
+}
+main span {
+    color: rgb(219, 153, 11);
+}
+main h2, h3 {
+    color:  rgb(41, 226, 112);
+    margin-top: -.5em;
+}
+main h3 {
+    margin-top: .7em;
+}
+#Sobre {
+    text-align: center;
+    margin: 6em 2em 6em 0em;
+    width: 30%;
+    float: right;
+    
+   
+}
+#Sobre p {
+    text-align: center;
+    z-index: -7em;
+}
+footer {
+    height: 12em; 
+    background-color: rgb(221, 153, 7);
+    position: absolute;
+    bottom: 0;
+    top: 51em;
+    width: 100%;
+}
+.cont-footer {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+footer h2 {
+    font-size: 2em;
+}
+footer ul {
+    margin-top: 1.1em;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+footer .copyright {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+  
+}
+.copyright h3 {
+    color: #ffff;
+    text-decoration: none;
+    margin-bottom: .5em;
+}
